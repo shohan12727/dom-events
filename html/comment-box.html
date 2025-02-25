@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>comment-box</title>
+    <style>
+        .comment{
+            border: 1px solid blue;
+            background-color: aliceblue ;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 10px;
+
+        }
+    </style>
+</head>
+<body>
+  
+    <h1>My awesome comment box</h1>
+    <section>
+        <h3>All comment here</h3>
+        <div>
+            <p class="comment">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio impedit pariatur eveniet voluptatibus optio perferendis recusandae consectetur repudiandae expedita. Recusandae atque assumenda dolorem amet, quae aliquid expedita earum ut sint.</p>
+            <p class="comment">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio impedit pariatur eveniet voluptatibus optio perferendis recusandae consectetur repudiandae expedita. Recusandae atque assumenda dolorem amet, quae aliquid expedita earum ut sint.</p>
+            <p class="comment">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio impedit pariatur eveniet voluptatibus optio perferendis recusandae consectetur repudiandae expedita. Recusandae atque assumenda dolorem amet, quae aliquid expedita earum ut sint.</p>
+            <!-- <p class="comment">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio impedit pariatur eveniet voluptatibus optio perferendis recusandae consectetur repudiandae expedita. Recusandae atque assumenda dolorem amet, quae aliquid expedita earum ut sint.</p> -->
+        </div>    
+    </section>      
+    <form action="">
+        <textarea  name="" id="comment-text-box" cols="60" rows="5"></textarea>
+        <br>
+        <br>
+        <button id="btn-post-comment">Post comment</button>
+    </form>      
+    <script>
+        // step 1 set an event handler to the button 
+        document.getElementById('btn-post-comment')
+        .addEventListener('click',function (){
+    // step -2 get the text written in the comment 
+           const commentTextBox = document.getElementById
+           ('comment-text-box');
+           
+           const newComment = commentTextBox.value;
+
+        })
+    </script>
+</body>
+</html>
